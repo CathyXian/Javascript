@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Remote Swap</title>
+		<link rel="stylesheet" href="./css/styles.css">
+		<style>
+			.remote {
+				border: solid teal 10px;
+				width: 960px;
+				height: 320px;
+				margin: 0px auto;
+				position:relative;
+
+				background-color: white;
+			}
+			/*Thumbnails on the right or left*/
+			.remote .thumbs {
+				text-decoration: none;
+				display: grid;
+				position: absolute;
+        margin: 0px;
+				width: 100px;
+			}
+
+			.column{
+				margin-left: 0px;
+				display: grid;
+				position: absolute;
+			}
+
+		  .columnMiddleFirst{
+		  	margin-left: 80px;
+				display:grid;
+				position:absolute;
+		  }
+
+			.columnMiddleSecond{
+				margin-left: 160px;
+				display:grid;
+				position:absolute;
+			}
+
+			.columnRight{
+				margin-left: 240px;
+				display:grid;
+				position:absolute;
+			}
+
+			/*Large opposite of the thumbnails (e.g. right or left)*/
+			.remote .large {
+
+				margin-left: 160px;
+				display:grid;
+				position:absolute;
+
+
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		    <h1>Remote Swap</h1>
+
+		    <div class="remote">
+
+			      <div class="thumbs">
+                 <div class="column">
+									<img src="./img/small/small_1.jpg">
+ 									<img src="./img/small/small_2.jpg">
+ 									<img src="./img/small/small_3.jpg">
+									<img src="./img/small/small_4.jpg">
+                 </div>
+								 <div class="columnMiddleFirst">
+									 <img src="./img/small/small_5.png">
+									 <img src="./img/small/small_6.jpg">
+									 <img src="./img/small/small_7.jpg">
+									 <img src="./img/small/small_8.jpg">
+								 </div>
+                 <div class="columnMiddleSecond">
+									 <img src="./img/small/small_9.jpg">
+									 <img src="./img/small/small_10.jpg">
+									 <img src="./img/small/small_11.jpg">
+									 <img src="./img/small/small_12.jpg">
+                 </div>
+								 <div class="columnRight">
+									 <img src="./img/small/small_13.jpg">
+									 <img src="./img/small/small_14.jpg">
+									 <img src="./img/small/small_15.jpg">
+									 <img src="./img/small/small_16.jpg">
+								 </div>
+
+		  			</div>
+
+								<div class="large">
+				   				<img src="./img/large/large_1.jpg" class= "large">
+								</div>
+
+	       </div>
+
+
+		<script>
+			var large = document.querySelectorAll('img.large');
+		  var thumbnails= document.querySelectorAll('.thumbs img');
+
+			thumbnails[0].addEventListener('mouseover', function(){
+
+			large[0].src= './img/large/large_1.jpg';
+			});
+
+			thumbnails[1].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_2.jpg';
+			});
+
+			thumbnails[2].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_3.jpg';
+			});
+
+			thumbnails[3].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_4.jpg';
+			});
+
+			thumbnails[4].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_5.jpg';
+			});
+
+			thumbnails[5].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_6.jpg';
+			});
+
+			thumbnails[6].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_7.jpg';
+			});
+
+			thumbnails[7].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_8.jpg';
+			});
+
+			thumbnails[8].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_9.jpg';
+			});
+
+			thumbnails[9].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_10.png';
+		  });
+
+			thumbnails[10].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_11.jpg';
+			});
+
+			thumbnails[11].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_12.jpg';
+			});
+
+			thumbnails[12].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_13.jpg';
+			});
+
+			thumbnails[13].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_14.jpg';
+			});
+
+			thumbnails[14].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_15.jpg';
+			});
+
+			thumbnails[15].addEventListener('mouseover', function(){
+
+			large[0].src = './img/large/large_16.jpg';
+			});
+
+
+
+
+
+
+		</script>
+	</body>
+</html>
