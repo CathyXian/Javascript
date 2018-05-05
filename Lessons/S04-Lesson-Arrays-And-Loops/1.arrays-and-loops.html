@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arrays and Loops</title>
+		<style>
+			body {
+			    background-color: #365634;
+			    color: #eee;
+			}
+			h1 {
+			    margin: 50px 20px 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Arrays and Loops</h1>
+
+		<h2>Ice Creams</h2>
+		<ul>
+			<li>Vanilla</li>
+			<li>Chocolate</li>
+			<li>Raspberry</li>
+			<li>Cookies &amp; Cream</li>
+			<li>Mint Chocolate Chip</li>
+		</ul>
+
+		<script>
+			/*-------------------------------------
+			| Review
+			-------------------------------------*/
+      var timbuktu = 'I can\t do this';
+			var timbuktu1 = 'I can\t do this';
+			var number=126;
+
+			console.log(timbuktu+timbuktu1);
+
+			console.log(timbuktu+number);
+
+			function doThis(anything, arg2){
+				console.log(anything+10+arg2);
+				console.log(25+35);
+			}
+
+			doThis('say what',200);
+			doThis(200,100);
+			doThis('say how',300);
+
+			var fruity=['apple','orange','bananas',12];
+
+			console.log(fruity);
+			console.log(fruity[0]);
+
+			fruity.push('grapes');
+
+			console.log(fruity);
+
+			fruity.splice(2,1);
+			console.log(fruity);//only one item , fruity.splice(2):all after number 3 will be deleted;
+
+			delete fruity[1];
+
+			var howMany=fruity.length;
+
+			console.log(fruity.length);
+
+			fruity.unshift('blueberry');
+			console.log(fruity);
+			fruity[2]='strawberry';
+			console.log(fruity);
+
+			var veggies=['carrots','kale','spinach','salads'];
+
+			for(var i=0; i<=veggies.length; i++){
+				console.log(veggies[i]);
+			}
+
+			var cars= ['honda','hyundai','toyota','ford'];
+
+			cars.forEach(function(car){
+
+				console.log("I drove a "+ car);
+			});
+
+			var listItems=document.querySelectorAll('li');
+
+			console.log(listItems);
+
+			listItems.forEach(function(theItem){
+				console.log('I like to eat' +theItem.innerHTML)
+			});
+
+
+			/*-------------------------------------
+			| Arrays FRUITY
+			-------------------------------------*/
+			// upon declaration/initializing
+
+			// add after declaration/initializing
+
+			// removing array elements
+
+			// deleting array elements
+
+			// array length
+
+
+			/*-------------------------------------
+			| for Loops VEGGIES
+			-------------------------------------*/
+			// standard for loop
+
+			// standard for loop against an array
+
+
+			/*-------------------------------------
+			| forEach
+			-------------------------------------*/
+			// used on arrays
+
+
+			// Used on Collections (Not really an array, rather a NodeList or group of live DOM elements)
+
+
+		</script>
+
+
+	</body>
+</html>

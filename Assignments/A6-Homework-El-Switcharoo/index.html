@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>El Switcharoo</title>
+	<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+	<div id="stage">
+
+		<h1>El Switcharoo</h1>
+
+		<div class="set set1">
+			<!-- Set 1 Object and Switch Images Go Here -->
+			<img id="one" data-on="img/one-on.jpg" data-off="img/one-off.jpg" src="img/one-off.jpg">
+			<label class="switch one">
+		        <input type="checkbox" name="checkbox">
+		        <span class="slider one"></span>
+		    </label>
+		</div>
+		<div class="set set2">
+			<img id="two" data-on="img/two-on.jpg" data-off="img/two-off.jpg" src="img/two-off.jpg">
+			<label class="switch two">
+ 	        <input type="checkbox" name="checkbox">
+ 	        <span class="slider two"></span>
+ 	    </label>
+		</div>
+		<div class="set set3">
+			<!-- Set 3 Object and Switch Images Go Here -->
+			<img id="three" data-on="img/three-on.jpg" data-off="img/three-off.jpg" src="img/three-off.jpg">
+			<label class="switch three">
+		        <input type="checkbox" name="checkbox">
+		        <span class="slider three"></span>
+		    </label>
+		</div>
+	</div>
+	<script>
+		var checkBoxes = document.querySelector("input[name=checkbox]");
+		var images = document.querySelectorAll(".set img");
+
+		console.log(images);
+		console.log(checkBoxes);
+
+
+		checkBoxes[0].addEventListener('change', function(){
+		   if (this.checked) {
+				//Checkbox is checked..
+		    var onSet = images[0].dataset.on;
+		    images[0].src = onSet;
+		   	} else {
+				//Checkbox is unchecked
+				var offSet = images[0].dataset.off;
+			  images[0].src = offSet;
+		}
+	});
+
+		checkBoxes[1].addEventListener('change', function(){
+			if (this.checked) {
+				// Checkbox is checked..
+				var onSet = images[1].dataset.on;
+				images[1].src = onSet;
+			} else {
+				//Checkbox is unchecked
+				var offSet = images[1].dataset.off;
+				images[1].src = offSet;
+			}
+		});
+
+		checkBoxes[2].addEventListener('change', function(){
+			if (this.checked) {
+				// Checkbox is checked..
+				var onSet = images[2].dataset.on;
+				images[2].src = onSet;
+			} else {
+				//Checkbox is unchecked
+				var offSet = images[2].dataset.off;
+				images[2].src = offSet;
+			}
+		});
+
+
+	</script>
+
+
+</body>
+
+</html>

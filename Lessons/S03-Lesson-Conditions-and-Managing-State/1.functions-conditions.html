@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset='utf-8'>
 		<title>Functions and Conditions</title>
 		<style>
 			body {
@@ -15,15 +15,48 @@
 		</style>
 		<script>
 			/*-------------------------------------
-			| Review
+			| Review 04/21/2018
 			-------------------------------------*/
 
+			var myStr= 'Today is great!';
+			var number =1234;
+			var number2=2345;
+			var myVar='I can\'t know it';
+
+			console.log(number+number2);
+			console.log(myStr + myVar);
+
+			/*
+      Multi line comments
+			*/
 
 			/*-------------------------------------
 			| Functions
 			-------------------------------------*/
+			window.onload =function() {
+      var theH1 = document.querySelectorAll('h1');
+			theH1[0].addEventListener('click', function(){
+				console.log('Today is Saturday');
+			});
+			function doSomething(myNum){
+				console.log(myNum+5);
+				console.log(10*myNum);
+			}
+			//call the function
+			doSomething(10);
+			doSomething(20);
+			doSomething(100);
 
+      var weather ='sunny';
 
+			if (weather==='rain'){
+				console.log('bring umbrella');
+			}
+      else{
+				console.log('bring sunscreen');
+			}
+
+		   }
 			/*-------------------------------------
 			| Conditions
 			-------------------------------------*/
