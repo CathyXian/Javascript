@@ -58,11 +58,62 @@
 			/*-------------------------------------
 			| Conditions
 			-------------------------------------*/
+      var weather = "sunny";
 
+			if (weather=="sunny"){
+				console.log("bring your hat");
+			} else{
+				console.log("bring umbralla");
+			}
 
 			/*-------------------------------------
 			| Toggle Element Examples
 			-------------------------------------*/
+     // hide the departure-details
+		 // 2. when user cliks
+		 // a. shows departure deatials;
+		 //b. hide departure details;
+		 //4. change name ;
+
+		 //Grab targets
+
+		 var button = document.querySelector('button.product');
+		 var showHideText = document.querySelector('button.product span');
+		 var departureDetails = document.querySelector('div.departure-details');
+
+		 console.log('Button', button);
+		 console.log('show me the text', showHideText);
+		 console.log('show the departure details',departureDetails);
+
+		 //departureDetails.style.display= 'block';
+
+		 //departureDeatils.style.display= 'none';
+      //showHideText.innerHTML ='Hide';
+
+		// showHideText.innerHTML ='Show';
+
+		departureDetails.style.display='none';
+
+		 button.addEventListener('click',function(){
+			 console.log('you clicked me!');
+
+			 if (departureDetails.style.display=='none'){
+					console.log('A!');
+
+					departureDetails.style.display=='block';
+
+					showHideText.innerHTML ='Hide';
+			 }else
+			 {
+				 departureDetails.style.display ="none";
+					console.log('B!');
+					showHideText.innerHTML ='Show';
+			 }
+
+
+		 });
+
+
 
 
 		</script>

@@ -6,11 +6,10 @@ var boxes= document.querySelectorAll('.box');
 | for each function
 -------------------------------------*/
 
-boxes.forEach(function(theMove){
-        theMove.addEventListener("click", function(){
-        for (var i=0; i<boxes.length; i++){
+boxes.forEach(function(box){
+        box.addEventListener("click", function(){
 
-           boxes[i].classList.toggle("on");
+           box.classList.toggle("on");
      }
    });
 });
