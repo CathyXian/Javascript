@@ -10,6 +10,8 @@ boxes.forEach(function(box){
         box.addEventListener("click", function(){
 
            box.classList.toggle("on");
-     }
    });
 });
+
+
+ 

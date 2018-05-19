@@ -1,4 +1,4 @@
-var drawers= document.querySelectorAll('.drawer');
+var thedrawers= document.querySelectorAll('.drawer');
 
 
 
@@ -6,9 +6,9 @@ var drawers= document.querySelectorAll('.drawer');
 | for each function
 -------------------------------------*/
 
-drawers.forEach(function(theMove){
-        theMove.addEventListener("click", function(){
-         
-     }
+thedrawers.forEach(function(drawer){
+        drawer.addEventListener("click", function(){
+
+        drawer.classList.toggle("on");
    });
 });

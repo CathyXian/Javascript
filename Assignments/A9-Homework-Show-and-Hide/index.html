@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Conditions</title>
+	<style>
+		body {
+			background-color: yellow;
+		}
+
+		h1 {
+			margin: 50px 20px 100px;
+		}
+
+		.container {
+			background-color: white;
+			padding: 20px;
+			width: 500px;
+			margin: auto;
+		}
+
+		header {
+			background-color: #eee;
+			padding: 20px;
+		}
+
+		.ticket-details {
+			background-color: blue;
+			padding: 20px;
+			color: white;
+		}
+
+		.button{
+			height: 50px;
+			width: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Conditions</h1>
+
+	<div class="container">
+		<header>
+			<h2>Your Movie Ticket Is Booked</h2>
+			<button class="product">
+					<span>Display</span>  Ticket Details
+				</button>
+
+			<button class="info">
+					<span>Show</span>  Movie Info
+				</button>
+
+		</header>
+		<div class="ticket-details">
+			<p>
+				<span>Movie: AVENGERS: INFINITY WAR </span>
+				<span>
+						<p>
+					      	AMC Century City 15
+	                10250 Santa Monica Boulevard
+	                Los Angeles, CA 90067
+					</p>
+					</span>
+			</p>
+			<p>
+				<span>Show Time: </span>
+				<span>08:00</span>
+			</p>
+		</div>
+
+		<div class="movie-details">
+			<p>
+				<span>Movie: AVENGERS: INFINITY WAR </span>
+				<span>
+						<p>
+							An unprecedented cinematic journey ten years in the making and spanning the entire Marvel Cinematic Universe, Marvel Studios' "Avengers: Infinity War" brings to the screen the ultimate, deadliest showdown of all time. The Avengers and their Super Hero allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+							Rating:	PG-13 (for intense sequences of sci-fi violence and action throughout, language and some crude references)
+							Genre:	Action & Adventure, Science Fiction & Fantasy
+						<p>
+							Directed By:	Anthony Russo, Joe Russo
+						</p>
+						<p>
+							Written By:	Christopher Markus, Stephen McFeely
+						</p>
+						<p>
+							In Theaters:	Apr 27, 2018  Wide
+						</p>
+							Runtime:	156 minutes
+						<p>
+
+						Studio:	Walt Disney Pictures
+						</p>
+					</span>
+		</div>
+	</div>
+
+
+	<script>
+		var button = document.querySelector('button.product');
+		var showHideText = document.querySelector('button.product span');
+		var ticketDetails = document.querySelector('div.ticket-details');
+
+		console.log('Button', button);
+		console.log('show me the text', showHideText);
+		console.log('show the departure details', ticketDetails);
+
+
+		ticketDetails.style.display = 'none';
+
+		button.addEventListener('click', function() {
+
+			if (ticketDetails.style.display == 'none') {
+				console.log('A!');
+
+				ticketDetails.style.display = 'block';
+
+				showHideText.innerHTML = 'Hide';
+			} else {
+				ticketDetails.style.display = "none";
+				console.log('B!');
+				showHideText.innerHTML = 'Dispaly';
+			}
+
+
+		});
+
+		var buttonInfo = document.querySelector('button.info');
+		var showHideTextInfo = document.querySelector('button.info span');
+		var movieDetails = document.querySelector('div.movie-details');
+
+	  movieDetails.style.display = 'none';
+
+		buttonInfo.addEventListener('click', function() {
+
+			if (movieDetails.style.display == 'none') {
+        console.log('a!');
+				movieDetails.style.display = 'block';
+
+				showHideTextInfo.innerHTML = 'Hide';
+			} else {
+				movieDetails.style.display = "none";
+				console.log('b!');
+				showHideTextInfo.innerHTML = 'Show';
+			}
+
+
+		});
+
+	</script>
+
+
+</body>
+
+</html>
